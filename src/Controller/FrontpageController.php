@@ -23,4 +23,12 @@ class FrontpageController extends AbstractController
     {
         return $this->render('impress.html.twig');
     }
+
+    /**
+     * @Route("/privacy", name="privacy")
+     */
+    public function privacy(): Response
+    {
+        return $this->render('privacy.html.twig');
+    }
 }
