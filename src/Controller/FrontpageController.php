@@ -13,9 +13,6 @@ class FrontpageController extends AbstractController
      */
     public function index(): Response
     {
-        return $this->json([
-            'message' => 'Welcome to your new controller!',
-            'path' => 'src/Controller/FrontpageController.php',
-        ]);
+        return $this->render('index.html.twig');
     }
 }
